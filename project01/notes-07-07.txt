@@ -7,3 +7,9 @@ how to use fetch without an input from a form
 
 to do 
  >add item 
+ >display items (per dates & change dates displayed)
+
+
+
+example of php for specific dates
+SELECT * FROM `food_items` WHERE `user` = 2 and `date` = '2022-07-07';

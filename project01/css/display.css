@@ -35,11 +35,24 @@ section {
   margin: 3em;
 }
 
-main {
+main,
+#display-titles,
+#display-totals {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin: auto;
   text-align: center;
   max-width: 800px;
+  border: 1px solid black;
+}
+
+main {
+  border-bottom: none;
+}
+
+#display-titles {
+  background-color: #0066ee;
+  color: white;
+  border-bottom: 0px;
 }

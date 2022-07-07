@@ -22,41 +22,76 @@
       <div id="sign-out">sign out</div>
     </header>
 
+    <div style="display: flex; justify-content: center; font-size: 2em">
+      &#8592; 2022-07-07 &#8594;
+    </div>
+
     <section>
-      <form action="php/food-insert.php" id="food-insert-form">
-        <input type="text" placeholder="Food Name" required id="insert-item" />
+      <form id="food-insert-form">
+        <input
+          type="text"
+          placeholder="Food Name"
+          required
+          id="insert-item"
+          name="insert-item"
+        />
         <input
           type="number"
           placeholder="Amount (g)"
           required
           id="insert-amount"
+          name="insert-amount"
         />
         <input
           type="number"
           placeholder="Calories"
           required
           id="insert-calories"
+          name="insert-calories"
         />
-        <input type="number" placeholder="Fat (g)" required id="insert-fat" />
-        <input type="number" placeholder="Carb (g)" required id="insert-carb" />
-        <input type="number" placeholder="Prot (g)" required id="insert-prot" />
+        <input
+          type="number"
+          placeholder="Fat (g)"
+          required
+          id="insert-fat"
+          name="insert-fat"
+        />
+        <input
+          type="number"
+          placeholder="Carb (g)"
+          required
+          id="insert-carb"
+          name="insert-carb"
+        />
+        <input
+          type="number"
+          placeholder="Prot (g)"
+          required
+          id="insert-prot"
+          name="insert-prot"
+        />
         <button type="submit" id="food-insert-button">ADD</button>
       </form>
     </section>
 
-    <main>
+    <div id="display-titles">
       <p>Item</p>
       <p>Amount (g)</p>
       <p>Calories</p>
       <p>Fat (g)</p>
       <p>Carb (g)</p>
       <p>Prot (g)</p>
-      <span>apple</span>
-      <span>54</span>
-      <span>100</span>
-      <span>0</span>
-      <span>14</span>
-      <span>0</span>
-    </main>
+      <p>Delete</p>
+    </div>
+    <main id="meal-display"></main>
+    <div id="display-totals">
+      <span>Total:</span>
+      <span></span>
+      <span id="totalCal"></span>
+      <span id="totalFat"></span>
+      <span id="totalCarb"></span>
+      <span id="totalProt"></span>
+      <span></span>
+    </div>
   </body>
 </html>
