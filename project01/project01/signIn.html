@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script src="js/sign-in.js" defer></script>
+    <link rel="stylesheet" href="css/signIn.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header><h1>MY MEAL LOG</h1></header>
+    <main>
+      <h1>Login</h1>
+
+      <form action="php/verify.php" id="verify-form">
+        <input
+          type="text"
+          name="sign-in"
+          id="sign-in"
+          placeholder="Enter Username"
+          required
+        />
+        <div id="feedbackMsg"></div>
+        <button type="submit" id="submit-sign-in">LOG IN</button>
+        <a href="signUp.html" id="signup-button">SIGN UP</a>
+      </form>
+    </main>
+  </body>
+</html>
