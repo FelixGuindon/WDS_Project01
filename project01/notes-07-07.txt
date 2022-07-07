@@ -1,0 +1,9 @@
+how to use fetch without an input from a form
+ >want to send localstorage.id to .php file instead of by form input
+ >$statement->bind_param('i', $_REQUEST['content']);
+ >**need this for insert as well; so insert for the person logged in**
+
+>food-insert.php is not working
+
+to do 
+ >add item 

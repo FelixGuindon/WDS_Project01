@@ -1,0 +1,43 @@
+to do list - or similar
++ an extra feature that changes how it functions
+
+>due date
+>favorite item
+>reoccuring*
+
+
+calendar*?
+ >time duration (2:00 - 4:00am)
+ >huge diff in visual display
+
+nutrition log
+ >meal times (breakfast, lunch dinner)
+ >nutrition info
+ >item name
+ >item log (save unique items into a DB)
+
+ inspiration:
+  >look out for lists or todos in free time
+
+
+[MEAL LOG] 
+>add item: 
+   >item name
+   >quantity
+   >nutritional info (cal, macros*)
+   >example: 'apple', '1', '90cal'
+>shown log:
+   >example:
+            apple
+
+**food storage?**: example i log apple; 90cal per '1'. 
+**only functional for one day: no saving**
+
+
+
+
+
+
+
+
+

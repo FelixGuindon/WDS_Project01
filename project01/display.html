@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/display.js" defer></script>
+    <link rel="stylesheet" href="css/display.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="username-display"></div>
+      <h1>MY MEAL LOG</h1>
+      <div id="sign-out">sign out</div>
+    </header>
+
+    <section>
+      <form action="php/food-insert.php" id="food-insert-form">
+        <input type="text" placeholder="Food Name" required id="insert-item" />
+        <input
+          type="number"
+          placeholder="Amount (g)"
+          required
+          id="insert-amount"
+        />
+        <input
+          type="number"
+          placeholder="Calories"
+          required
+          id="insert-calories"
+        />
+        <input type="number" placeholder="Fat (g)" required id="insert-fat" />
+        <input type="number" placeholder="Carb (g)" required id="insert-carb" />
+        <input type="number" placeholder="Prot (g)" required id="insert-prot" />
+        <button type="submit" id="food-insert-button">ADD</button>
+      </form>
+    </section>
+
+    <main>
+      <p>Item</p>
+      <p>Amount (g)</p>
+      <p>Calories</p>
+      <p>Fat (g)</p>
+      <p>Carb (g)</p>
+      <p>Prot (g)</p>
+      <span>apple</span>
+      <span>54</span>
+      <span>100</span>
+      <span>0</span>
+      <span>14</span>
+      <span>0</span>
+    </main>
+  </body>
+</html>
