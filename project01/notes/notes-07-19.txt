@@ -1,0 +1,36 @@
+project01 additions
+ >save and share a food item
+   [STATIC]
+	>item-name
+	
+   [FLEXIBLE]
+	>cal, fat, carb, prot
+   
+   [SETTING VALUE]
+	>amount [g]
+
+   >form:input add a new saved-entry
+   [NEW PAGE - SAVED ENTRIES]
+   >form: add a previously saved-entry
+	>share a previously saved entry to a different user****
+
+ >display food by date
+
+ >share to another user
+	>dropdown to select user
+	>drop down to select item already in current users list
+
+
+UPDATE ITEM
+  >pencil change button
+  >send to new page 
+	>edit: name, amount, cal, fat, prot, carb
+	>
+
+SHARE ITEM
+  >share button?
+  >send to new page and share the specific entry clicked~ 
+
+SHARE ITEMS
+ >share custom
+ >share specific item a user curr has

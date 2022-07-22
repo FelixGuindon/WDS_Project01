@@ -5,7 +5,7 @@
     $insertedRows = 0;
 
     if($db_connect) {
-        $sql = "INSERT INTO `food_items` (`item`, `amount`, `calories`, `fat`, `carb`, `prot`, `date`, `user`) VALUES (?, ?, ?, ?, ?, ?, '2022-07-07', ?)";
+        $sql = "INSERT INTO `food_items` (`item`, `amount`, `calories`, `fat`, `carb`, `prot`, `date`, `user`) VALUES (?, ?, ?, ?, ?, ?, NOW(), ?)";
         
         if($statement = $db_connect->prepare($sql)){
             $statement->bind_param('siiiiii', $_REQUEST['insert-item'], $_REQUEST['insert-amount'], $_REQUEST['insert-calories'], $_REQUEST['insert-fat'], $_REQUEST['insert-carb'], $_REQUEST['insert-prot'], $_REQUEST['user']);

@@ -20,6 +20,10 @@ header {
   font-size: 1.5em;
 }
 
+#sign-out:hover{
+  color: #FFFF00;
+}
+
 #username-display {
   text-align: left;
   font-size: 1.5em;
@@ -35,11 +39,11 @@ section {
   margin: 3em;
 }
 
-main,
+article,
 #display-titles,
 #display-totals {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin: auto;
   text-align: center;
@@ -47,12 +51,61 @@ main,
   border: 1px solid black;
 }
 
+article{
+  border: 0px;
+}
+
+/* article:hover{
+  background-color: rgba(213, 219, 255, 0.5);
+  transition: all .15s ease-in-out;
+} */
+
+article img{
+  height: 1em;
+  margin: auto;
+}
+
 main {
   border-bottom: none;
+  max-width: 800px;
+  margin: auto;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 #display-titles {
   background-color: #0066ee;
   color: white;
   border-bottom: 0px;
+}
+
+select{
+  max-width: 3em;
+}
+
+#share-feedback-message{
+  display: none;
+  text-align: center;
+  background-color: blue;
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 1em;
+  color: white;
+  font-size: 1.25em;
+}
+
+#share-feedback-message:hover{
+  opacity: 80%;
+  transition: all .5s ease-out;
+}
+
+form button:hover{
+  background-color: #0066ee;
+  border-color: #0066ee;
+  color: white;
+}
+
+.colored{
+  background-color: rgba(213, 219, 255, 0.3);
 }

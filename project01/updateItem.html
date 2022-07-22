@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/updateItem.js" defer></script>
+    <link rel="stylesheet" href="css/updateItem.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        /* form{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            max-width: 400px;
+            margin: auto;
+            align-items: center;
+        }
+
+        form button{
+            grid-column: span 2;
+        }
+
+        #updateItemIDLabel, #updateItemID{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="username-display"></div>
+        <h1>MY MEAL LOG</h1>
+        <div id="sign-out">sign out</div>
+    </header>
+    
+    <form action="" id="update-item-form">
+
+        <label for="updateItemName">Item Name</label>
+        <input type="text" name="updateItemName" id="updateItemName">
+
+        <label for="updateItemAmount">Amount (g)</label>
+        <input type="text" name="updateItemAmount" id="updateItemAmount">
+
+        <label for="updateItemCal">Calories (g)</label>
+        <input type="text" name="updateItemCal" id="updateItemCal">
+
+        <label for="updateItemFat">Fat (g)</label>
+        <input type="text" name="updateItemFat" id="updateItemFat">
+
+        <label for="updateItemCarb">Carb (g)</label>
+        <input type="text" name="updateItemCarb" id="updateItemCarb">
+
+        <label for="updateItemProt">Prot (g)</label>
+        <input type="text" name="updateItemProt" id="updateItemProt">
+
+        <label for="updateItemID" id="updateItemIDLabel">ID</label>
+        <input type="text" name="updateItemID" id="updateItemID">
+
+        <button type="submit" id="updateItemSubmit">Update</button>
+    </form>
+</body>
+</html>
